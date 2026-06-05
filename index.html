@@ -506,18 +506,24 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
     }
 
     async function fetchPrices() {
-        var parts = stockIds.flatMap(function(id) {
-            return ['tse_' + id + '.tw', 'otc_' + id + '.tw'];
-        });
-        var url = 'https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=' + parts.join('|') + '&json=1&delay=0';
+        // Yahoo Finance API 支援 CORS，同時試上市(.TW)和上櫃(.TWO)
+        var symbols = stockIds.flatMap(function(id) {
+            return [id + '.TW', id + '.TWO'];
+        }).join(',');
+        var url = 'https://query1.finance.yahoo.com/v7/finance/quote?symbols=' + symbols +
+                  '&fields=regularMarketPrice,regularMarketPreviousClose,regularMarketChangePercent';
         try {
-            var resp = await fetch(url);
+            var resp = await fetch(url, { headers: { 'Accept': 'application/json' } });
             var data = await resp.json();
             var prices = {};
-            (data.msgArray || []).forEach(function(item) {
-                var price = parseFloat(item.z);
-                if (!isNaN(price)) {
-                    prices[item.c] = { price: price, prev: parseFloat(item.y) };
+            ((data.quoteResponse || {}).result || []).forEach(function(item) {
+                var sid = item.symbol.replace(/\.(TW|TWO)$/, '');
+                if (!prices[sid] && item.regularMarketPrice) {
+                    prices[sid] = {
+                        price: item.regularMarketPrice,
+                        prev: item.regularMarketPreviousClose,
+                        changePct: item.regularMarketChangePercent
+                    };
                 }
             });
             return prices;
@@ -547,8 +553,7 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
             }
 
             var price = prices[sid].price;
-            var prev = prices[sid].prev;
-            var changePct = prev ? (price - prev) / prev * 100 : 0;
+            var changePct = prices[sid].changePct || 0;
             var entryDiff = entry ? (price - entry) / entry * 100 : 0;
 
             priceEl.textContent = price.toFixed(2);
