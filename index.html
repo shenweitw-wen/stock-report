@@ -13,6 +13,7 @@ h1 { font-size: 1.4rem; padding: 20px 24px 8px; color: #f8fafc; }
 .stat-card .label { color: #94a3b8; font-size: 11px; margin-bottom: 4px; }
 .stat-card .value { font-size: 1.4rem; font-weight: 700; color: #f1f5f9; }
 .section { padding: 0 24px 28px; }
+.today-section { border-top: 1px solid #334155; padding-top: 24px; margin-bottom: 8px; }
 h2 { font-size: 1rem; color: #94a3b8; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
 .table-wrap { overflow-x: auto; border-radius: 8px; border: 1px solid #1e293b; }
 table { width: 100%; border-collapse: collapse; }
@@ -20,14 +21,173 @@ thead th { background: #1e293b; color: #64748b; font-size: 11px; text-transform:
 tbody tr:hover { background: #1e293b; }
 tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: nowrap; color: #cbd5e1; }
 .small-table { max-width: 500px; }
+.pick-grid { display: flex; flex-wrap: wrap; gap: 12px; }
+.pick-card { background: #1e293b; border: 1px solid #334155; border-radius: 10px; padding: 16px; min-width: 240px; flex: 1 1 240px; max-width: 320px; }
+.pick-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.pick-id { font-size: 1.2rem; font-weight: 700; color: #f8fafc; }
+.pick-name { color: #94a3b8; flex: 1; }
+.pick-chip { margin-bottom: 12px; font-size: 12px; }
+.pick-prices { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.price-item { background: #0f172a; border-radius: 6px; padding: 8px 10px; }
+.price-label { color: #64748b; font-size: 10px; margin-bottom: 2px; }
+.price-val { font-size: 1rem; font-weight: 600; color: #e2e8f0; }
+.price-val.highlight { color: #fbbf24; }
+.price-val.danger { color: #f87171; }
+.price-val.success { color: #4ade80; }
 </style>
 </head>
 <body>
 <h1>📊 選股判斷數據庫</h1>
-<p class="subtitle">生成時間：2026-06-04 ｜ 資料來源：logs/judgments.db</p>
+<p class="subtitle">生成時間：2026-06-05 ｜ 資料來源：logs/judgments.db</p>
+
+
+<div class="section today-section">
+    <h2>📅 今日選股（2026-06-05）— 共 10 檔</h2>
+    <div class="pick-grid">
+            <div class="pick-card">
+                <div class="pick-header">
+                    <span class="pick-id">1210</span>
+                    <span class="pick-name">大成</span>
+                    <span style="background:#1e3a5f;color:#93c5fd;padding:2px 8px;border-radius:4px">⚡ 當沖</span>
+                </div>
+                <div class="pick-chip"><span style="color:#facc15">●●○○○</span> 2/5 &nbsp; <span style="background:#374151;color:#d1d5db;padding:2px 8px;border-radius:4px">➡️ 中性</span></div>
+                <div class="pick-prices">
+                    <div class="price-item"><div class="price-label">收盤</div><div class="price-val">54.2</div></div>
+                    <div class="price-item"><div class="price-label">進場</div><div class="price-val highlight">55.27</div></div>
+                    <div class="price-item"><div class="price-label">停損 <span style="color:#f87171;font-size:11px">(-2.5%)</span></div><div class="price-val danger">53.9</div></div>
+                    <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+4.1%)</span></div><div class="price-val success">57.56</div></div>
+                </div>
+            </div>
+            <div class="pick-card">
+                <div class="pick-header">
+                    <span class="pick-id">2353</span>
+                    <span class="pick-name">宏��</span>
+                    <span style="background:#1e3a5f;color:#93c5fd;padding:2px 8px;border-radius:4px">⚡ 當沖</span>
+                </div>
+                <div class="pick-chip"><span style="color:#facc15">●●○○○</span> 2/5 &nbsp; <span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></div>
+                <div class="pick-prices">
+                    <div class="price-item"><div class="price-label">收盤</div><div class="price-val">39.1</div></div>
+                    <div class="price-item"><div class="price-label">進場</div><div class="price-val highlight">42.81</div></div>
+                    <div class="price-item"><div class="price-label">停損 <span style="color:#f87171;font-size:11px">(-7.8%)</span></div><div class="price-val danger">39.45</div></div>
+                    <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+13.1%)</span></div><div class="price-val success">48.42</div></div>
+                </div>
+            </div>
+            <div class="pick-card">
+                <div class="pick-header">
+                    <span class="pick-id">2371</span>
+                    <span class="pick-name">大同</span>
+                    <span style="background:#1e3a5f;color:#93c5fd;padding:2px 8px;border-radius:4px">⚡ 當沖</span>
+                </div>
+                <div class="pick-chip"><span style="color:#facc15">●●○○○</span> 2/5 &nbsp; <span style="background:#7f1d1d;color:#fecaca;padding:2px 8px;border-radius:4px">📉 利空</span></div>
+                <div class="pick-prices">
+                    <div class="price-item"><div class="price-label">收盤</div><div class="price-val">32.05</div></div>
+                    <div class="price-item"><div class="price-label">進場</div><div class="price-val highlight">32.96</div></div>
+                    <div class="price-item"><div class="price-label">停損 <span style="color:#f87171;font-size:11px">(-5.6%)</span></div><div class="price-val danger">31.11</div></div>
+                    <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+9.3%)</span></div><div class="price-val success">36.04</div></div>
+                </div>
+            </div>
+            <div class="pick-card">
+                <div class="pick-header">
+                    <span class="pick-id">2855</span>
+                    <span class="pick-name">統一證</span>
+                    <span style="background:#1e3a5f;color:#93c5fd;padding:2px 8px;border-radius:4px">⚡ 當沖</span>
+                </div>
+                <div class="pick-chip"><span style="color:#facc15">●●○○○</span> 2/5 &nbsp; <span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></div>
+                <div class="pick-prices">
+                    <div class="price-item"><div class="price-label">收盤</div><div class="price-val">55.5</div></div>
+                    <div class="price-item"><div class="price-label">進場</div><div class="price-val highlight">58.49</div></div>
+                    <div class="price-item"><div class="price-label">停損 <span style="color:#f87171;font-size:11px">(-5.8%)</span></div><div class="price-val danger">55.07</div></div>
+                    <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+9.8%)</span></div><div class="price-val success">64.2</div></div>
+                </div>
+            </div>
+            <div class="pick-card">
+                <div class="pick-header">
+                    <span class="pick-id">2883</span>
+                    <span class="pick-name">凱基金</span>
+                    <span style="background:#1e3a5f;color:#93c5fd;padding:2px 8px;border-radius:4px">⚡ 當沖</span>
+                </div>
+                <div class="pick-chip"><span style="color:#facc15">●●○○○</span> 2/5 &nbsp; <span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></div>
+                <div class="pick-prices">
+                    <div class="price-item"><div class="price-label">收盤</div><div class="price-val">27.4</div></div>
+                    <div class="price-item"><div class="price-label">進場</div><div class="price-val highlight">28.29</div></div>
+                    <div class="price-item"><div class="price-label">停損 <span style="color:#f87171;font-size:11px">(-4.8%)</span></div><div class="price-val danger">26.92</div></div>
+                    <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+8.1%)</span></div><div class="price-val success">30.57</div></div>
+                </div>
+            </div>
+            <div class="pick-card">
+                <div class="pick-header">
+                    <span class="pick-id">9910</span>
+                    <span class="pick-name">豐泰</span>
+                    <span style="background:#1e3a5f;color:#93c5fd;padding:2px 8px;border-radius:4px">⚡ 當沖</span>
+                </div>
+                <div class="pick-chip"><span style="color:#facc15">●●○○○</span> 2/5 &nbsp; <span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></div>
+                <div class="pick-prices">
+                    <div class="price-item"><div class="price-label">收盤</div><div class="price-val">80.5</div></div>
+                    <div class="price-item"><div class="price-label">進場</div><div class="price-val highlight">85.22</div></div>
+                    <div class="price-item"><div class="price-label">停損 <span style="color:#f87171;font-size:11px">(-5.2%)</span></div><div class="price-val danger">80.83</div></div>
+                    <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+8.6%)</span></div><div class="price-val success">92.54</div></div>
+                </div>
+            </div>
+            <div class="pick-card">
+                <div class="pick-header">
+                    <span class="pick-id">1504</span>
+                    <span class="pick-name">東元</span>
+                    <span style="background:#1a3a2a;color:#86efac;padding:2px 8px;border-radius:4px">📈 短線</span>
+                </div>
+                <div class="pick-chip"><span style="color:#fb923c">●○○○○</span> 1/5 &nbsp; <span style="background:#374151;color:#d1d5db;padding:2px 8px;border-radius:4px">➡️ 中性</span></div>
+                <div class="pick-prices">
+                    <div class="price-item"><div class="price-label">收盤</div><div class="price-val">87.0</div></div>
+                    <div class="price-item"><div class="price-label">進場</div><div class="price-val highlight">87.0</div></div>
+                    <div class="price-item"><div class="price-label">停損 <span style="color:#f87171;font-size:11px">(-6.5%)</span></div><div class="price-val danger">81.35</div></div>
+                    <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+13.0%)</span></div><div class="price-val success">98.29</div></div>
+                </div>
+            </div>
+            <div class="pick-card">
+                <div class="pick-header">
+                    <span class="pick-id">2352</span>
+                    <span class="pick-name">佳世達</span>
+                    <span style="background:#1a3a2a;color:#86efac;padding:2px 8px;border-radius:4px">📈 短線</span>
+                </div>
+                <div class="pick-chip"><span style="color:#fb923c">●○○○○</span> 1/5 &nbsp; <span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></div>
+                <div class="pick-prices">
+                    <div class="price-item"><div class="price-label">收盤</div><div class="price-val">34.25</div></div>
+                    <div class="price-item"><div class="price-label">進場</div><div class="price-val highlight">34.25</div></div>
+                    <div class="price-item"><div class="price-label">停損 <span style="color:#f87171;font-size:11px">(-6.5%)</span></div><div class="price-val danger">32.02</div></div>
+                    <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+13.1%)</span></div><div class="price-val success">38.72</div></div>
+                </div>
+            </div>
+            <div class="pick-card">
+                <div class="pick-header">
+                    <span class="pick-id">3550</span>
+                    <span class="pick-name">聯穎</span>
+                    <span style="background:#1a3a2a;color:#86efac;padding:2px 8px;border-radius:4px">📈 短線</span>
+                </div>
+                <div class="pick-chip"><span style="color:#fb923c">●○○○○</span> 1/5 &nbsp; <span style="background:#7f1d1d;color:#fecaca;padding:2px 8px;border-radius:4px">📉 利空</span></div>
+                <div class="pick-prices">
+                    <div class="price-item"><div class="price-label">收盤</div><div class="price-val">23.95</div></div>
+                    <div class="price-item"><div class="price-label">進場</div><div class="price-val highlight">23.95</div></div>
+                    <div class="price-item"><div class="price-label">停損 <span style="color:#f87171;font-size:11px">(-7.8%)</span></div><div class="price-val danger">22.09</div></div>
+                    <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+15.6%)</span></div><div class="price-val success">27.68</div></div>
+                </div>
+            </div>
+            <div class="pick-card">
+                <div class="pick-header">
+                    <span class="pick-id">8070</span>
+                    <span class="pick-name">長華*</span>
+                    <span style="background:#1a3a2a;color:#86efac;padding:2px 8px;border-radius:4px">📈 短線</span>
+                </div>
+                <div class="pick-chip"><span style="color:#fb923c">●○○○○</span> 1/5 &nbsp; <span style="background:#374151;color:#d1d5db;padding:2px 8px;border-radius:4px">➡️ 中性</span></div>
+                <div class="pick-prices">
+                    <div class="price-item"><div class="price-label">收盤</div><div class="price-val">65.3</div></div>
+                    <div class="price-item"><div class="price-label">進場</div><div class="price-val highlight">65.3</div></div>
+                    <div class="price-item"><div class="price-label">停損 <span style="color:#f87171;font-size:11px">(-6.7%)</span></div><div class="price-val danger">60.91</div></div>
+                    <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+13.5%)</span></div><div class="price-val success">74.09</div></div>
+                </div>
+            </div></div>
+</div>
 
 <div class="stats">
-    <div class="stat-card"><div class="label">總篩選記錄</div><div class="value">0</div></div>
+    <div class="stat-card"><div class="label">總篩選記錄</div><div class="value">10</div></div>
     <div class="stat-card"><div class="label">已有回報數據</div><div class="value">0</div></div>
     <div class="stat-card"><div class="label">平均 1 日回報</div><div class="value" style="color:#ef4444">+0.00%</div></div>
     <div class="stat-card"><div class="label">平均 5 日回報</div><div class="value" style="color:#ef4444">+0.00%</div></div>
@@ -46,7 +206,7 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
 </div>
 
 <div class="section">
-    <h2>所有選股記錄（共 0 筆）</h2>
+    <h2>所有選股記錄（共 10 筆）</h2>
     <div class="table-wrap">
         <table>
             <thead>
@@ -59,7 +219,207 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
                 </tr>
             </thead>
             <tbody>
-                <tr><td colspan='18' style='color:#64748b;text-align:center;padding:20px'>尚無記錄</td></tr>
+                
+        <tr>
+            <td>2026-06-05</td>
+            <td><strong>9910</strong></td>
+            <td>豐泰</td>
+            <td style="text-align:center">當沖</td>
+            <td style="text-align:right">80.5</td>
+            <td style="text-align:right">85.22</td>
+            <td style="text-align:center"><span style="color:#facc15">●●○○○</span> 2/5</td>
+            <td style="text-align:right">78</td>
+            <td style="text-align:right">67</td>
+            <td style="text-align:right">2.9x</td>
+            <td style="text-align:right">71.8</td>
+            <td style="text-align:center"><span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:center"><span style="color:#9ca3af">- 未觸發</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+        </tr>
+        <tr>
+            <td>2026-06-05</td>
+            <td><strong>2883</strong></td>
+            <td>凱基金</td>
+            <td style="text-align:center">當沖</td>
+            <td style="text-align:right">27.4</td>
+            <td style="text-align:right">28.29</td>
+            <td style="text-align:center"><span style="color:#facc15">●●○○○</span> 2/5</td>
+            <td style="text-align:right">96</td>
+            <td style="text-align:right">84</td>
+            <td style="text-align:right">5.2x</td>
+            <td style="text-align:right">22.5</td>
+            <td style="text-align:center"><span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:center"><span style="color:#9ca3af">- 未觸發</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+        </tr>
+        <tr>
+            <td>2026-06-05</td>
+            <td><strong>2855</strong></td>
+            <td>統一證</td>
+            <td style="text-align:center">當沖</td>
+            <td style="text-align:right">55.5</td>
+            <td style="text-align:right">58.49</td>
+            <td style="text-align:center"><span style="color:#facc15">●●○○○</span> 2/5</td>
+            <td style="text-align:right">98</td>
+            <td style="text-align:right">88</td>
+            <td style="text-align:right">3.8x</td>
+            <td style="text-align:right">43.8</td>
+            <td style="text-align:center"><span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:center"><span style="color:#9ca3af">- 未觸發</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+        </tr>
+        <tr>
+            <td>2026-06-05</td>
+            <td><strong>2371</strong></td>
+            <td>大同</td>
+            <td style="text-align:center">當沖</td>
+            <td style="text-align:right">32.05</td>
+            <td style="text-align:right">32.96</td>
+            <td style="text-align:center"><span style="color:#facc15">●●○○○</span> 2/5</td>
+            <td style="text-align:right">78</td>
+            <td style="text-align:right">61</td>
+            <td style="text-align:right">3.3x</td>
+            <td style="text-align:right">29.7</td>
+            <td style="text-align:center"><span style="background:#7f1d1d;color:#fecaca;padding:2px 8px;border-radius:4px">📉 利空</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:center"><span style="color:#9ca3af">- 未觸發</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+        </tr>
+        <tr>
+            <td>2026-06-05</td>
+            <td><strong>2353</strong></td>
+            <td>宏��</td>
+            <td style="text-align:center">當沖</td>
+            <td style="text-align:right">39.1</td>
+            <td style="text-align:right">42.81</td>
+            <td style="text-align:center"><span style="color:#facc15">●●○○○</span> 2/5</td>
+            <td style="text-align:right">61</td>
+            <td style="text-align:right">69</td>
+            <td style="text-align:right">2.6x</td>
+            <td style="text-align:right">31.8</td>
+            <td style="text-align:center"><span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:center"><span style="color:#9ca3af">- 未觸發</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+        </tr>
+        <tr>
+            <td>2026-06-05</td>
+            <td><strong>1210</strong></td>
+            <td>大成</td>
+            <td style="text-align:center">當沖</td>
+            <td style="text-align:right">54.2</td>
+            <td style="text-align:right">55.27</td>
+            <td style="text-align:center"><span style="color:#facc15">●●○○○</span> 2/5</td>
+            <td style="text-align:right">84</td>
+            <td style="text-align:right">61</td>
+            <td style="text-align:right">2.9x</td>
+            <td style="text-align:right">52.7</td>
+            <td style="text-align:center"><span style="background:#374151;color:#d1d5db;padding:2px 8px;border-radius:4px">➡️ 中性</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:center"><span style="color:#9ca3af">- 未觸發</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+        </tr>
+        <tr>
+            <td>2026-06-05</td>
+            <td><strong>8070</strong></td>
+            <td>長華*</td>
+            <td style="text-align:center">短線</td>
+            <td style="text-align:right">65.3</td>
+            <td style="text-align:right">65.3</td>
+            <td style="text-align:center"><span style="color:#fb923c">●○○○○</span> 1/5</td>
+            <td style="text-align:right">98</td>
+            <td style="text-align:right">83</td>
+            <td style="text-align:right">5.4x</td>
+            <td style="text-align:right">49.2</td>
+            <td style="text-align:center"><span style="background:#374151;color:#d1d5db;padding:2px 8px;border-radius:4px">➡️ 中性</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:center"><span style="color:#9ca3af">- 未觸發</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+        </tr>
+        <tr>
+            <td>2026-06-05</td>
+            <td><strong>3550</strong></td>
+            <td>聯穎</td>
+            <td style="text-align:center">短線</td>
+            <td style="text-align:right">23.95</td>
+            <td style="text-align:right">23.95</td>
+            <td style="text-align:center"><span style="color:#fb923c">●○○○○</span> 1/5</td>
+            <td style="text-align:right">82</td>
+            <td style="text-align:right">63</td>
+            <td style="text-align:right">3.5x</td>
+            <td style="text-align:right">21.0</td>
+            <td style="text-align:center"><span style="background:#7f1d1d;color:#fecaca;padding:2px 8px;border-radius:4px">📉 利空</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:center"><span style="color:#9ca3af">- 未觸發</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+        </tr>
+        <tr>
+            <td>2026-06-05</td>
+            <td><strong>2352</strong></td>
+            <td>佳世達</td>
+            <td style="text-align:center">短線</td>
+            <td style="text-align:right">34.25</td>
+            <td style="text-align:right">34.25</td>
+            <td style="text-align:center"><span style="color:#fb923c">●○○○○</span> 1/5</td>
+            <td style="text-align:right">87</td>
+            <td style="text-align:right">79</td>
+            <td style="text-align:right">4.4x</td>
+            <td style="text-align:right">27.9</td>
+            <td style="text-align:center"><span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:center"><span style="color:#9ca3af">- 未觸發</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+        </tr>
+        <tr>
+            <td>2026-06-05</td>
+            <td><strong>1504</strong></td>
+            <td>東元</td>
+            <td style="text-align:center">短線</td>
+            <td style="text-align:right">87.0</td>
+            <td style="text-align:right">87.0</td>
+            <td style="text-align:center"><span style="color:#fb923c">●○○○○</span> 1/5</td>
+            <td style="text-align:right">84</td>
+            <td style="text-align:right">73</td>
+            <td style="text-align:right">4.4x</td>
+            <td style="text-align:right">73.3</td>
+            <td style="text-align:center"><span style="background:#374151;color:#d1d5db;padding:2px 8px;border-radius:4px">➡️ 中性</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:center"><span style="color:#9ca3af">- 未觸發</span></td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+            <td style="text-align:right">-</td>
+        </tr>
             </tbody>
         </table>
     </div>
