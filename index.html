@@ -526,8 +526,8 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
                         price: price,
                         changePct: (!isNaN(prev) && prev) ? (price - prev) / prev * 100 : 0
                     };
-                } else if (!isNaN(prev)) {
-                    // 收盤後 z="-"，用昨收顯示
+                } else if (!isNaN(prev) && !prices[item.c]) {
+                    // 收盤後 z="-"，用昨收顯示（不覆蓋已有的即時價）
                     prices[item.c] = { price: prev, changePct: 0, closed: true };
                 }
             });
