@@ -1,0 +1,85 @@
+{
+  "date": "2026-06-05",
+  "stocks": [
+    {
+      "id": "1210",
+      "name": "大成",
+      "entry": 55.27,
+      "stop": 53.9,
+      "target": 57.56,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "2353",
+      "name": "宏��",
+      "entry": 42.81,
+      "stop": 39.45,
+      "target": 48.42,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "2371",
+      "name": "大同",
+      "entry": 32.96,
+      "stop": 31.11,
+      "target": 36.04,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "2855",
+      "name": "統一證",
+      "entry": 58.49,
+      "stop": 55.07,
+      "target": 64.2,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "2883",
+      "name": "凱基金",
+      "entry": 28.29,
+      "stop": 26.92,
+      "target": 30.57,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "9910",
+      "name": "豐泰",
+      "entry": 85.22,
+      "stop": 80.83,
+      "target": 92.54,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "1504",
+      "name": "東元",
+      "entry": 87.0,
+      "stop": 81.35,
+      "target": 98.29,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2352",
+      "name": "佳世達",
+      "entry": 34.25,
+      "stop": 32.02,
+      "target": 38.72,
+      "trade_type": "短線"
+    },
+    {
+      "id": "3550",
+      "name": "聯穎",
+      "entry": 23.95,
+      "stop": 22.09,
+      "target": 27.68,
+      "trade_type": "短線"
+    },
+    {
+      "id": "8070",
+      "name": "長華*",
+      "entry": 65.3,
+      "stop": 60.91,
+      "target": 74.09,
+      "trade_type": "短線"
+    }
+  ]
+}
