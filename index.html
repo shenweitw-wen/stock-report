@@ -506,34 +506,55 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
     }
 
     async function fetchPrices() {
-        // Yahoo Finance API 支援 CORS，同時試上市(.TW)和上櫃(.TWO)
-        var symbols = stockIds.flatMap(function(id) {
-            return [id + '.TW', id + '.TWO'];
-        }).join(',');
-        var url = 'https://query1.finance.yahoo.com/v7/finance/quote?symbols=' + symbols +
-                  '&fields=regularMarketPrice,regularMarketPreviousClose,regularMarketChangePercent';
+        var parts = stockIds.flatMap(function(id) {
+            return ['tse_' + id + '.tw', 'otc_' + id + '.tw'];
+        });
+        var apiUrl = 'https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=' +
+                     parts.join('|') + '&json=1&delay=0';
+        // corsproxy.io 繞過 CORS 限制
+        var url = 'https://corsproxy.io/?' + encodeURIComponent(apiUrl);
         try {
-            var resp = await fetch(url, { headers: { 'Accept': 'application/json' } });
+            var ctrl = new AbortController();
+            var timer = setTimeout(function() { ctrl.abort(); }, 10000);
+            var resp = await fetch(url, { signal: ctrl.signal });
+            clearTimeout(timer);
             var data = await resp.json();
             var prices = {};
-            ((data.quoteResponse || {}).result || []).forEach(function(item) {
-                var sid = item.symbol.replace(/\.(TW|TWO)$/, '');
-                if (!prices[sid] && item.regularMarketPrice) {
-                    prices[sid] = {
-                        price: item.regularMarketPrice,
-                        prev: item.regularMarketPreviousClose,
-                        changePct: item.regularMarketChangePercent
+            (data.msgArray || []).forEach(function(item) {
+                var price = parseFloat(item.z);
+                var prev = parseFloat(item.y);
+                if (!isNaN(price)) {
+                    prices[item.c] = {
+                        price: price,
+                        changePct: (!isNaN(prev) && prev) ? (price - prev) / prev * 100 : 0
                     };
+                } else if (!isNaN(prev)) {
+                    // 收盤後 z="-"，用昨收顯示
+                    prices[item.c] = { price: prev, changePct: 0, closed: true };
                 }
             });
-            return prices;
-        } catch(e) { return null; }
+            return { ok: true, prices: prices };
+        } catch(e) {
+            return { ok: false, error: e.name === 'AbortError' ? '請求逾時' : e.message };
+        }
     }
 
-    function updateCards(prices) {
-        if (!prices) return;
-        var taiwanTime = new Date(new Date().getTime() + 8 * 3600000).toISOString().slice(11, 19);
+    function updateCards(result) {
         var timeEl = document.getElementById('rt-update-time');
+        if (!result) return;
+        if (!result.ok) {
+            if (timeEl) timeEl.textContent = '⚠ 報價取得失敗：' + result.error;
+            cards.forEach(function(card) {
+                var sid = card.dataset.stockId;
+                var priceEl = document.getElementById('rt-' + sid);
+                var statusEl = document.getElementById('rts-' + sid);
+                if (priceEl) priceEl.textContent = '-';
+                if (statusEl) statusEl.textContent = '取得失敗';
+            });
+            return;
+        }
+        var prices = result.prices;
+        var taiwanTime = new Date(new Date().getTime() + 8 * 3600000).toISOString().slice(11, 19);
         if (timeEl) timeEl.textContent = '即時報價更新：' + taiwanTime + ' (TWN)';
 
         cards.forEach(function(card) {
@@ -587,8 +608,8 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
     }
 
     async function refresh() {
-        var prices = await fetchPrices();
-        updateCards(prices);
+        var result = await fetchPrices();
+        updateCards(result);
         setTimeout(refresh, isTradingHour() ? 30000 : 300000);
     }
 
