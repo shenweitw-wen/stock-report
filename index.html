@@ -614,7 +614,7 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
     async function refresh() {
         var result = await fetchPrices();
         updateCards(result);
-        if (isTradingHour()) setTimeout(refresh, 30000);
+        if (isTradingHour()) setTimeout(refresh, 5000);
     }
 
     refresh();
