@@ -495,7 +495,8 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
     var cards = document.querySelectorAll('.pick-card[data-stock-id]');
     if (!cards.length) return;
     var stockIds = Array.from(cards).map(function(c) { return c.dataset.stockId; });
-    var lastPrices = {};
+    var _lpKey = 'lp_' + new Date().toISOString().slice(0, 10);
+    var lastPrices = JSON.parse(sessionStorage.getItem(_lpKey) || '{}');
 
     function isTradingHour() {
         var now = new Date();
@@ -525,6 +526,7 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
                 var prev = parseFloat(item.y);
                 if (!isNaN(price)) {
                     lastPrices[item.c] = { price: price, changePct: (!isNaN(prev) && prev) ? (price - prev) / prev * 100 : 0 };
+                    sessionStorage.setItem(_lpKey, JSON.stringify(lastPrices));
                 }
                 if (lastPrices[item.c]) {
                     prices[item.c] = lastPrices[item.c];
