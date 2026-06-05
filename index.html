@@ -524,6 +524,9 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
                 if (!item.c) return;
                 var price = parseFloat(item.z);
                 var prev = parseFloat(item.y);
+                if (isNaN(price) && item.b && item.b !== '-') {
+                    price = parseFloat(item.b.split('_')[0]);
+                }
                 if (!isNaN(price)) {
                     lastPrices[item.c] = { price: price, changePct: (!isNaN(prev) && prev) ? (price - prev) / prev * 100 : 0 };
                     sessionStorage.setItem(_lpKey, JSON.stringify(lastPrices));
