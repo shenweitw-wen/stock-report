@@ -509,10 +509,8 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
         var parts = stockIds.flatMap(function(id) {
             return ['tse_' + id + '.tw', 'otc_' + id + '.tw'];
         });
-        var apiUrl = 'https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=' +
-                     parts.join('|') + '&json=1&delay=0';
-        // corsproxy.io 繞過 CORS 限制
-        var url = 'https://corsproxy.io/?' + encodeURIComponent(apiUrl);
+        var exCh = parts.join('|');
+        var url = 'https://twse-proxy.shenweitw.workers.dev/?ex_ch=' + encodeURIComponent(exCh);
         try {
             var ctrl = new AbortController();
             var timer = setTimeout(function() { ctrl.abort(); }, 10000);
