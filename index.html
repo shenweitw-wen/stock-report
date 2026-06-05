@@ -34,6 +34,12 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
 .price-val.highlight { color: #fbbf24; }
 .price-val.danger { color: #f87171; }
 .price-val.success { color: #4ade80; }
+.rt-row { display: flex; align-items: center; gap: 8px; background: #0f172a; border-radius: 6px; padding: 6px 10px; margin-bottom: 10px; font-size: 12px; }
+.rt-label { color: #64748b; font-size: 10px; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; }
+.rt-price { font-size: 1.1rem; font-weight: 700; color: #e2e8f0; min-width: 50px; }
+.rt-change { font-size: 11px; font-weight: 600; min-width: 52px; }
+.rt-status { font-size: 11px; color: #94a3b8; flex: 1; text-align: right; }
+#rt-update-time { font-size: 11px; color: #475569; font-weight: normal; float: right; margin-top: 2px; }
 </style>
 </head>
 <body>
@@ -42,13 +48,19 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
 
 
 <div class="section today-section">
-    <h2>📅 今日選股（2026-06-05）— 共 10 檔</h2>
+    <h2>📅 今日選股（2026-06-05）— 共 10 檔<span id="rt-update-time">即時報價載入中…</span></h2>
     <div class="pick-grid">
-            <div class="pick-card">
+            <div class="pick-card" data-stock-id="1210" data-entry="55.27" data-stop="53.9" data-target="57.56">
                 <div class="pick-header">
                     <span class="pick-id">1210</span>
                     <span class="pick-name">大成</span>
                     <span style="background:#1e3a5f;color:#93c5fd;padding:2px 8px;border-radius:4px">⚡ 當沖</span>
+                </div>
+                <div class="rt-row">
+                    <span class="rt-label">即時</span>
+                    <span class="rt-price" id="rt-1210">-</span>
+                    <span class="rt-change" id="rtc-1210"></span>
+                    <span class="rt-status" id="rts-1210">載入中…</span>
                 </div>
                 <div class="pick-chip"><span style="color:#facc15">●●○○○</span> 2/5 &nbsp; <span style="background:#374151;color:#d1d5db;padding:2px 8px;border-radius:4px">➡️ 中性</span></div>
                 <div class="pick-prices">
@@ -58,11 +70,17 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
                     <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+4.1%)</span></div><div class="price-val success">57.56</div></div>
                 </div>
             </div>
-            <div class="pick-card">
+            <div class="pick-card" data-stock-id="2353" data-entry="42.81" data-stop="39.45" data-target="48.42">
                 <div class="pick-header">
                     <span class="pick-id">2353</span>
                     <span class="pick-name">宏��</span>
                     <span style="background:#1e3a5f;color:#93c5fd;padding:2px 8px;border-radius:4px">⚡ 當沖</span>
+                </div>
+                <div class="rt-row">
+                    <span class="rt-label">即時</span>
+                    <span class="rt-price" id="rt-2353">-</span>
+                    <span class="rt-change" id="rtc-2353"></span>
+                    <span class="rt-status" id="rts-2353">載入中…</span>
                 </div>
                 <div class="pick-chip"><span style="color:#facc15">●●○○○</span> 2/5 &nbsp; <span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></div>
                 <div class="pick-prices">
@@ -72,11 +90,17 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
                     <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+13.1%)</span></div><div class="price-val success">48.42</div></div>
                 </div>
             </div>
-            <div class="pick-card">
+            <div class="pick-card" data-stock-id="2371" data-entry="32.96" data-stop="31.11" data-target="36.04">
                 <div class="pick-header">
                     <span class="pick-id">2371</span>
                     <span class="pick-name">大同</span>
                     <span style="background:#1e3a5f;color:#93c5fd;padding:2px 8px;border-radius:4px">⚡ 當沖</span>
+                </div>
+                <div class="rt-row">
+                    <span class="rt-label">即時</span>
+                    <span class="rt-price" id="rt-2371">-</span>
+                    <span class="rt-change" id="rtc-2371"></span>
+                    <span class="rt-status" id="rts-2371">載入中…</span>
                 </div>
                 <div class="pick-chip"><span style="color:#facc15">●●○○○</span> 2/5 &nbsp; <span style="background:#7f1d1d;color:#fecaca;padding:2px 8px;border-radius:4px">📉 利空</span></div>
                 <div class="pick-prices">
@@ -86,11 +110,17 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
                     <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+9.3%)</span></div><div class="price-val success">36.04</div></div>
                 </div>
             </div>
-            <div class="pick-card">
+            <div class="pick-card" data-stock-id="2855" data-entry="58.49" data-stop="55.07" data-target="64.2">
                 <div class="pick-header">
                     <span class="pick-id">2855</span>
                     <span class="pick-name">統一證</span>
                     <span style="background:#1e3a5f;color:#93c5fd;padding:2px 8px;border-radius:4px">⚡ 當沖</span>
+                </div>
+                <div class="rt-row">
+                    <span class="rt-label">即時</span>
+                    <span class="rt-price" id="rt-2855">-</span>
+                    <span class="rt-change" id="rtc-2855"></span>
+                    <span class="rt-status" id="rts-2855">載入中…</span>
                 </div>
                 <div class="pick-chip"><span style="color:#facc15">●●○○○</span> 2/5 &nbsp; <span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></div>
                 <div class="pick-prices">
@@ -100,11 +130,17 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
                     <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+9.8%)</span></div><div class="price-val success">64.2</div></div>
                 </div>
             </div>
-            <div class="pick-card">
+            <div class="pick-card" data-stock-id="2883" data-entry="28.29" data-stop="26.92" data-target="30.57">
                 <div class="pick-header">
                     <span class="pick-id">2883</span>
                     <span class="pick-name">凱基金</span>
                     <span style="background:#1e3a5f;color:#93c5fd;padding:2px 8px;border-radius:4px">⚡ 當沖</span>
+                </div>
+                <div class="rt-row">
+                    <span class="rt-label">即時</span>
+                    <span class="rt-price" id="rt-2883">-</span>
+                    <span class="rt-change" id="rtc-2883"></span>
+                    <span class="rt-status" id="rts-2883">載入中…</span>
                 </div>
                 <div class="pick-chip"><span style="color:#facc15">●●○○○</span> 2/5 &nbsp; <span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></div>
                 <div class="pick-prices">
@@ -114,11 +150,17 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
                     <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+8.1%)</span></div><div class="price-val success">30.57</div></div>
                 </div>
             </div>
-            <div class="pick-card">
+            <div class="pick-card" data-stock-id="9910" data-entry="85.22" data-stop="80.83" data-target="92.54">
                 <div class="pick-header">
                     <span class="pick-id">9910</span>
                     <span class="pick-name">豐泰</span>
                     <span style="background:#1e3a5f;color:#93c5fd;padding:2px 8px;border-radius:4px">⚡ 當沖</span>
+                </div>
+                <div class="rt-row">
+                    <span class="rt-label">即時</span>
+                    <span class="rt-price" id="rt-9910">-</span>
+                    <span class="rt-change" id="rtc-9910"></span>
+                    <span class="rt-status" id="rts-9910">載入中…</span>
                 </div>
                 <div class="pick-chip"><span style="color:#facc15">●●○○○</span> 2/5 &nbsp; <span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></div>
                 <div class="pick-prices">
@@ -128,11 +170,17 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
                     <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+8.6%)</span></div><div class="price-val success">92.54</div></div>
                 </div>
             </div>
-            <div class="pick-card">
+            <div class="pick-card" data-stock-id="1504" data-entry="87.0" data-stop="81.35" data-target="98.29">
                 <div class="pick-header">
                     <span class="pick-id">1504</span>
                     <span class="pick-name">東元</span>
                     <span style="background:#1a3a2a;color:#86efac;padding:2px 8px;border-radius:4px">📈 短線</span>
+                </div>
+                <div class="rt-row">
+                    <span class="rt-label">即時</span>
+                    <span class="rt-price" id="rt-1504">-</span>
+                    <span class="rt-change" id="rtc-1504"></span>
+                    <span class="rt-status" id="rts-1504">載入中…</span>
                 </div>
                 <div class="pick-chip"><span style="color:#fb923c">●○○○○</span> 1/5 &nbsp; <span style="background:#374151;color:#d1d5db;padding:2px 8px;border-radius:4px">➡️ 中性</span></div>
                 <div class="pick-prices">
@@ -142,11 +190,17 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
                     <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+13.0%)</span></div><div class="price-val success">98.29</div></div>
                 </div>
             </div>
-            <div class="pick-card">
+            <div class="pick-card" data-stock-id="2352" data-entry="34.25" data-stop="32.02" data-target="38.72">
                 <div class="pick-header">
                     <span class="pick-id">2352</span>
                     <span class="pick-name">佳世達</span>
                     <span style="background:#1a3a2a;color:#86efac;padding:2px 8px;border-radius:4px">📈 短線</span>
+                </div>
+                <div class="rt-row">
+                    <span class="rt-label">即時</span>
+                    <span class="rt-price" id="rt-2352">-</span>
+                    <span class="rt-change" id="rtc-2352"></span>
+                    <span class="rt-status" id="rts-2352">載入中…</span>
                 </div>
                 <div class="pick-chip"><span style="color:#fb923c">●○○○○</span> 1/5 &nbsp; <span style="background:#166534;color:#bbf7d0;padding:2px 8px;border-radius:4px">📈 利多</span></div>
                 <div class="pick-prices">
@@ -156,11 +210,17 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
                     <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+13.1%)</span></div><div class="price-val success">38.72</div></div>
                 </div>
             </div>
-            <div class="pick-card">
+            <div class="pick-card" data-stock-id="3550" data-entry="23.95" data-stop="22.09" data-target="27.68">
                 <div class="pick-header">
                     <span class="pick-id">3550</span>
                     <span class="pick-name">聯穎</span>
                     <span style="background:#1a3a2a;color:#86efac;padding:2px 8px;border-radius:4px">📈 短線</span>
+                </div>
+                <div class="rt-row">
+                    <span class="rt-label">即時</span>
+                    <span class="rt-price" id="rt-3550">-</span>
+                    <span class="rt-change" id="rtc-3550"></span>
+                    <span class="rt-status" id="rts-3550">載入中…</span>
                 </div>
                 <div class="pick-chip"><span style="color:#fb923c">●○○○○</span> 1/5 &nbsp; <span style="background:#7f1d1d;color:#fecaca;padding:2px 8px;border-radius:4px">📉 利空</span></div>
                 <div class="pick-prices">
@@ -170,11 +230,17 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
                     <div class="price-item"><div class="price-label">停利 <span style="color:#4ade80;font-size:11px">(+15.6%)</span></div><div class="price-val success">27.68</div></div>
                 </div>
             </div>
-            <div class="pick-card">
+            <div class="pick-card" data-stock-id="8070" data-entry="65.3" data-stop="60.91" data-target="74.09">
                 <div class="pick-header">
                     <span class="pick-id">8070</span>
                     <span class="pick-name">長華*</span>
                     <span style="background:#1a3a2a;color:#86efac;padding:2px 8px;border-radius:4px">📈 短線</span>
+                </div>
+                <div class="rt-row">
+                    <span class="rt-label">即時</span>
+                    <span class="rt-price" id="rt-8070">-</span>
+                    <span class="rt-change" id="rtc-8070"></span>
+                    <span class="rt-status" id="rts-8070">載入中…</span>
                 </div>
                 <div class="pick-chip"><span style="color:#fb923c">●○○○○</span> 1/5 &nbsp; <span style="background:#374151;color:#d1d5db;padding:2px 8px;border-radius:4px">➡️ 中性</span></div>
                 <div class="pick-prices">
@@ -424,5 +490,105 @@ tbody td { padding: 9px 12px; border-bottom: 1px solid #1e293b; white-space: now
         </table>
     </div>
 </div>
+<script>
+(function () {
+    var cards = document.querySelectorAll('.pick-card[data-stock-id]');
+    if (!cards.length) return;
+    var stockIds = Array.from(cards).map(function(c) { return c.dataset.stockId; });
+
+    function isTradingHour() {
+        var now = new Date();
+        var taiwanNow = new Date(now.getTime() + 8 * 3600000);
+        var day = taiwanNow.getUTCDay();
+        if (day === 0 || day === 6) return false;
+        var mins = taiwanNow.getUTCHours() * 60 + taiwanNow.getUTCMinutes();
+        return mins >= 540 && mins <= 815; // 09:00–13:35 TWN
+    }
+
+    async function fetchPrices() {
+        var parts = stockIds.flatMap(function(id) {
+            return ['tse_' + id + '.tw', 'otc_' + id + '.tw'];
+        });
+        var url = 'https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=' + parts.join('|') + '&json=1&delay=0';
+        try {
+            var resp = await fetch(url);
+            var data = await resp.json();
+            var prices = {};
+            (data.msgArray || []).forEach(function(item) {
+                var price = parseFloat(item.z);
+                if (!isNaN(price)) {
+                    prices[item.c] = { price: price, prev: parseFloat(item.y) };
+                }
+            });
+            return prices;
+        } catch(e) { return null; }
+    }
+
+    function updateCards(prices) {
+        if (!prices) return;
+        var taiwanTime = new Date(new Date().getTime() + 8 * 3600000).toISOString().slice(11, 19);
+        var timeEl = document.getElementById('rt-update-time');
+        if (timeEl) timeEl.textContent = '即時報價更新：' + taiwanTime + ' (TWN)';
+
+        cards.forEach(function(card) {
+            var sid = card.dataset.stockId;
+            var entry = parseFloat(card.dataset.entry) || 0;
+            var stop = parseFloat(card.dataset.stop) || 0;
+            var target = parseFloat(card.dataset.target) || 0;
+            var priceEl = document.getElementById('rt-' + sid);
+            var changeEl = document.getElementById('rtc-' + sid);
+            var statusEl = document.getElementById('rts-' + sid);
+            if (!priceEl) return;
+
+            if (!prices[sid]) {
+                priceEl.textContent = '-';
+                if (statusEl) statusEl.textContent = '收盤中';
+                return;
+            }
+
+            var price = prices[sid].price;
+            var prev = prices[sid].prev;
+            var changePct = prev ? (price - prev) / prev * 100 : 0;
+            var entryDiff = entry ? (price - entry) / entry * 100 : 0;
+
+            priceEl.textContent = price.toFixed(2);
+            priceEl.style.color = changePct > 0 ? '#f87171' : changePct < 0 ? '#4ade80' : '#e2e8f0';
+
+            if (changeEl) {
+                changeEl.textContent = (changePct >= 0 ? '+' : '') + changePct.toFixed(2) + '%';
+                changeEl.style.color = changePct > 0 ? '#f87171' : '#4ade80';
+            }
+
+            if (statusEl) {
+                var status = '', color = '#94a3b8';
+                if (target && price >= target) {
+                    status = '🎯 已達停利'; color = '#4ade80';
+                    card.style.borderColor = '#4ade80';
+                } else if (stop && price <= stop) {
+                    status = '⚠️ 跌破停損'; color = '#f87171';
+                    card.style.borderColor = '#f87171';
+                } else if (entry && Math.abs(entryDiff) <= 0.5) {
+                    status = '⚡ 接近進場'; color = '#fbbf24';
+                    card.style.borderColor = '#fbbf24';
+                } else if (entry && entryDiff > 0.5) {
+                    status = '▲ ' + entryDiff.toFixed(1) + '%（超進場）'; color = '#fb923c';
+                } else if (entry) {
+                    status = '▼ ' + Math.abs(entryDiff).toFixed(1) + '%（未到）'; color = '#94a3b8';
+                }
+                statusEl.textContent = status;
+                statusEl.style.color = color;
+            }
+        });
+    }
+
+    async function refresh() {
+        var prices = await fetchPrices();
+        updateCards(prices);
+        setTimeout(refresh, isTradingHour() ? 30000 : 300000);
+    }
+
+    refresh();
+})();
+</script>
 </body>
 </html>
