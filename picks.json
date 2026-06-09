@@ -1,4 +1,85 @@
 {
   "date": "2026-06-09",
-  "stocks": []
+  "stocks": [
+    {
+      "id": "0052",
+      "name": "富邦科技",
+      "entry": 59.55,
+      "stop": 56.87,
+      "target": 64.02,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "2105",
+      "name": "正新",
+      "entry": 34.17,
+      "stop": 32.72,
+      "target": 36.59,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "2609",
+      "name": "陽明",
+      "entry": 52.86,
+      "stop": 49.81,
+      "target": 57.95,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "2881",
+      "name": "富邦金",
+      "entry": 118.09,
+      "stop": 111.75,
+      "target": 128.66,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "9910",
+      "name": "豐泰",
+      "entry": 79.7,
+      "stop": 74.47,
+      "target": 88.41,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "2457",
+      "name": "飛宏",
+      "entry": 28.25,
+      "stop": 25.82,
+      "target": 33.1,
+      "trade_type": "短線"
+    },
+    {
+      "id": "6155",
+      "name": "鈞寶",
+      "entry": 77.3,
+      "stop": 66.5,
+      "target": 98.9,
+      "trade_type": "短線"
+    },
+    {
+      "id": "1708",
+      "name": "東鹼",
+      "entry": 44.2,
+      "stop": 41.09,
+      "target": 50.41,
+      "trade_type": "短線"
+    },
+    {
+      "id": "4739",
+      "name": "康普",
+      "entry": 118.5,
+      "stop": 106.14,
+      "target": 143.23,
+      "trade_type": "短線"
+    },
+    {
+      "id": "6005",
+      "name": "群益證",
+      "entry": 40.55,
+      "stop": 37.24,
+      "target": 47.16,
+      "trade_type": "短線"
+    }
+  ]
 }
