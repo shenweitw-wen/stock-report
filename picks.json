@@ -10,6 +10,38 @@
       "trade_type": "短線"
     },
     {
+      "id": "2338",
+      "name": "光罩",
+      "entry": 52.8,
+      "stop": 47.04,
+      "target": 64.32,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2342",
+      "name": "茂矽",
+      "entry": 48.05,
+      "stop": 42.77,
+      "target": 58.6,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2484",
+      "name": "希華",
+      "entry": 70.4,
+      "stop": 61.59,
+      "target": 88.02,
+      "trade_type": "短線"
+    },
+    {
+      "id": "3060",
+      "name": "銘異",
+      "entry": 33.9,
+      "stop": 30.47,
+      "target": 40.76,
+      "trade_type": "短線"
+    },
+    {
       "id": "5469",
       "name": "瀚宇博",
       "entry": 87.5,
@@ -42,6 +74,14 @@
       "trade_type": "短線"
     },
     {
+      "id": "2302",
+      "name": "麗正",
+      "entry": 41.8,
+      "stop": 37.38,
+      "target": 50.64,
+      "trade_type": "短線"
+    },
+    {
       "id": "2413",
       "name": "環科",
       "entry": 62.5,
@@ -55,6 +95,22 @@
       "entry": 38.15,
       "stop": 34.06,
       "target": 46.32,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2504",
+      "name": "國產",
+      "entry": 36.25,
+      "stop": 35.02,
+      "target": 38.71,
+      "trade_type": "短線"
+    },
+    {
+      "id": "3016",
+      "name": "嘉晶",
+      "entry": 119.5,
+      "stop": 103.27,
+      "target": 151.96,
       "trade_type": "短線"
     },
     {
