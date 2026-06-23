@@ -80,6 +80,14 @@
       "stop": 99.19,
       "target": 136.12,
       "trade_type": "短線"
+    },
+    {
+      "id": "5285",
+      "name": "界霖",
+      "entry": 102.5,
+      "stop": 93.06,
+      "target": 121.38,
+      "trade_type": "短線"
     }
   ]
 }
