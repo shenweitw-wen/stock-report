@@ -1,4 +1,85 @@
 {
   "date": "2026-06-23",
-  "stocks": []
+  "stocks": [
+    {
+      "id": "2388",
+      "name": "威盛",
+      "entry": 89.04,
+      "stop": 81.8,
+      "target": 101.11,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "1563",
+      "name": "巧新",
+      "entry": 66.2,
+      "stop": 60.03,
+      "target": 78.54,
+      "trade_type": "短線"
+    },
+    {
+      "id": "1727",
+      "name": "中華化",
+      "entry": 102.0,
+      "stop": 93.31,
+      "target": 119.38,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2006",
+      "name": "東和鋼鐵",
+      "entry": 69.6,
+      "stop": 66.96,
+      "target": 74.87,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2101",
+      "name": "南港",
+      "entry": 32.05,
+      "stop": 30.54,
+      "target": 35.06,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2340",
+      "name": "台亞",
+      "entry": 42.8,
+      "stop": 38.52,
+      "target": 51.35,
+      "trade_type": "短線"
+    },
+    {
+      "id": "3041",
+      "name": "揚智",
+      "entry": 30.95,
+      "stop": 28.21,
+      "target": 36.42,
+      "trade_type": "短線"
+    },
+    {
+      "id": "3094",
+      "name": "聯傑",
+      "entry": 41.8,
+      "stop": 38.37,
+      "target": 48.66,
+      "trade_type": "短線"
+    },
+    {
+      "id": "6168",
+      "name": "宏齊",
+      "entry": 31.1,
+      "stop": 28.63,
+      "target": 36.04,
+      "trade_type": "短線"
+    },
+    {
+      "id": "6834",
+      "name": "天二科技",
+      "entry": 111.5,
+      "stop": 99.19,
+      "target": 136.12,
+      "trade_type": "短線"
+    }
+  ]
 }
