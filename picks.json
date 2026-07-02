@@ -1,76 +1,84 @@
 {
-  "date": "2026-07-01",
+  "date": "2026-07-02",
   "stocks": [
     {
-      "id": "1810",
-      "name": "和成",
-      "entry": 21.35,
-      "stop": 19.98,
-      "target": 24.09,
+      "id": "2338",
+      "name": "光罩",
+      "entry": 53.2,
+      "stop": 48.32,
+      "target": 62.95,
       "trade_type": "短線"
     },
     {
-      "id": "2406",
-      "name": "國碩",
-      "entry": 41.8,
-      "stop": 37.25,
-      "target": 50.9,
+      "id": "2363",
+      "name": "矽統",
+      "entry": 73.5,
+      "stop": 66.38,
+      "target": 87.75,
       "trade_type": "短線"
     },
     {
-      "id": "2409",
-      "name": "友達",
-      "entry": 32.7,
-      "stop": 29.16,
-      "target": 39.77,
-      "trade_type": "短線"
-    },
-    {
-      "id": "2425",
-      "name": "承啟",
-      "entry": 45.2,
-      "stop": 40.62,
-      "target": 54.35,
-      "trade_type": "短線"
-    },
-    {
-      "id": "2801",
-      "name": "彰銀",
-      "entry": 24.0,
-      "stop": 23.21,
-      "target": 25.59,
+      "id": "3605",
+      "name": "宏致",
+      "entry": 85.6,
+      "stop": 79.21,
+      "target": 98.37,
       "trade_type": "短線"
     },
     {
       "id": "3717",
       "name": "聯嘉投控",
-      "entry": 27.45,
-      "stop": 25.36,
-      "target": 31.63,
+      "entry": 28.95,
+      "stop": 26.67,
+      "target": 33.51,
       "trade_type": "短線"
     },
     {
-      "id": "4720",
-      "name": "德淵",
-      "entry": 25.35,
-      "stop": 23.79,
-      "target": 28.48,
+      "id": "4763",
+      "name": "材料*-KY",
+      "entry": 47.9,
+      "stop": 45.23,
+      "target": 53.24,
       "trade_type": "短線"
     },
     {
-      "id": "6226",
-      "name": "光鼎",
-      "entry": 22.05,
-      "stop": 20.49,
-      "target": 25.17,
+      "id": "4916",
+      "name": "事欣科",
+      "entry": 112.5,
+      "stop": 102.08,
+      "target": 133.35,
       "trade_type": "短線"
     },
     {
-      "id": "9958",
-      "name": "世紀鋼",
-      "entry": 117.5,
-      "stop": 110.75,
-      "target": 131.0,
+      "id": "4989",
+      "name": "榮科",
+      "entry": 91.8,
+      "stop": 82.1,
+      "target": 111.19,
+      "trade_type": "短線"
+    },
+    {
+      "id": "1802",
+      "name": "台玻",
+      "entry": 71.1,
+      "stop": 63.2,
+      "target": 86.89,
+      "trade_type": "短線"
+    },
+    {
+      "id": "3016",
+      "name": "嘉晶",
+      "entry": 122.0,
+      "stop": 103.39,
+      "target": 159.22,
+      "trade_type": "短線"
+    },
+    {
+      "id": "3031",
+      "name": "佰鴻",
+      "entry": 34.5,
+      "stop": 31.79,
+      "target": 39.91,
       "trade_type": "短線"
     }
   ]
