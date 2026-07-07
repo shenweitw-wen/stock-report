@@ -1,76 +1,84 @@
 {
-  "date": "2026-07-06",
+  "date": "2026-07-07",
   "stocks": [
     {
-      "id": "2103",
-      "name": "台橡",
-      "entry": 23.5,
-      "stop": 22.01,
-      "target": 26.49,
+      "id": "1514",
+      "name": "亞力",
+      "entry": 126.5,
+      "stop": 96.7,
+      "target": 186.1,
       "trade_type": "短線"
     },
     {
-      "id": "1301",
-      "name": "台塑",
-      "entry": 62.1,
-      "stop": 56.65,
-      "target": 73.01,
+      "id": "1714",
+      "name": "和桐",
+      "entry": 20.9,
+      "stop": 16.72,
+      "target": 29.27,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2630",
+      "name": "亞航",
+      "entry": 56.3,
+      "stop": 52.57,
+      "target": 63.76,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2634",
+      "name": "漢翔",
+      "entry": 60.3,
+      "stop": 52.96,
+      "target": 74.99,
+      "trade_type": "短線"
+    },
+    {
+      "id": "3605",
+      "name": "宏致",
+      "entry": 87.7,
+      "stop": 69.73,
+      "target": 123.65,
+      "trade_type": "短線"
+    },
+    {
+      "id": "8131",
+      "name": "福懋科",
+      "entry": 82.2,
+      "stop": 67.67,
+      "target": 111.26,
       "trade_type": "短線"
     },
     {
       "id": "1515",
       "name": "力山",
-      "entry": 42.0,
-      "stop": 38.74,
-      "target": 48.52,
+      "entry": 42.75,
+      "stop": 35.22,
+      "target": 57.8,
       "trade_type": "短線"
     },
     {
-      "id": "2201",
-      "name": "裕隆",
-      "entry": 28.8,
-      "stop": 27.77,
-      "target": 30.86,
+      "id": "1810",
+      "name": "和成",
+      "entry": 23.7,
+      "stop": 19.66,
+      "target": 31.77,
       "trade_type": "短線"
     },
     {
-      "id": "2615",
-      "name": "萬海",
-      "entry": 82.8,
-      "stop": 79.4,
-      "target": 89.59,
+      "id": "2208",
+      "name": "台船",
+      "entry": 20.3,
+      "stop": 17.52,
+      "target": 25.86,
       "trade_type": "短線"
     },
     {
-      "id": "3591",
-      "name": "艾笛森",
-      "entry": 28.25,
-      "stop": 25.94,
-      "target": 32.87,
-      "trade_type": "短線"
-    },
-    {
-      "id": "4540",
-      "name": "全球傳動",
-      "entry": 64.0,
-      "stop": 59.91,
-      "target": 72.19,
-      "trade_type": "短線"
-    },
-    {
-      "id": "4720",
-      "name": "德淵",
-      "entry": 26.0,
-      "stop": 24.09,
-      "target": 29.81,
-      "trade_type": "短線"
-    },
-    {
-      "id": "6133",
-      "name": "金橋",
-      "entry": 25.8,
-      "stop": 24.19,
-      "target": 29.01,
+      "id": "6412",
+      "name": "群電",
+      "entry": 92.0,
+      "stop": 79.52,
+      "target": 116.96,
       "trade_type": "短線"
     }
   ]
