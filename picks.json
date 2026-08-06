@@ -1,4 +1,85 @@
 {
   "date": "2026-08-06",
-  "stocks": []
+  "stocks": [
+    {
+      "id": "2388",
+      "name": "威盛",
+      "entry": 85.12,
+      "stop": 76.96,
+      "target": 98.73,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "2426",
+      "name": "鼎元",
+      "entry": 67.13,
+      "stop": 58.81,
+      "target": 81.0,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "2006",
+      "name": "東和鋼鐵",
+      "entry": 78.4,
+      "stop": 74.5,
+      "target": 86.2,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2399",
+      "name": "映泰",
+      "entry": 39.35,
+      "stop": 35.28,
+      "target": 47.49,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2436",
+      "name": "偉詮電",
+      "entry": 61.0,
+      "stop": 55.57,
+      "target": 71.86,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2489",
+      "name": "瑞軒",
+      "entry": 33.1,
+      "stop": 29.68,
+      "target": 39.94,
+      "trade_type": "短線"
+    },
+    {
+      "id": "3048",
+      "name": "益登",
+      "entry": 58.3,
+      "stop": 53.11,
+      "target": 68.67,
+      "trade_type": "短線"
+    },
+    {
+      "id": "3702",
+      "name": "大聯大",
+      "entry": 129.0,
+      "stop": 119.04,
+      "target": 148.93,
+      "trade_type": "短線"
+    },
+    {
+      "id": "6770",
+      "name": "力積電",
+      "entry": 66.1,
+      "stop": 58.56,
+      "target": 81.18,
+      "trade_type": "短線"
+    },
+    {
+      "id": "8110",
+      "name": "華東",
+      "entry": 46.0,
+      "stop": 41.15,
+      "target": 55.71,
+      "trade_type": "短線"
+    }
+  ]
 }
