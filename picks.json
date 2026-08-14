@@ -1,84 +1,76 @@
 {
-  "date": "2026-08-13",
+  "date": "2026-08-14",
   "stocks": [
     {
       "id": "1605",
       "name": "華新",
       "entry": 41.2,
-      "stop": 38.19,
-      "target": 46.21,
-      "trade_type": "當沖"
-    },
-    {
-      "id": "1608",
-      "name": "華榮",
-      "entry": 39.4,
-      "stop": 36.72,
-      "target": 43.87,
-      "trade_type": "當沖"
-    },
-    {
-      "id": "2324",
-      "name": "仁寶",
-      "entry": 40.1,
-      "stop": 37.51,
-      "target": 44.42,
-      "trade_type": "當沖"
-    },
-    {
-      "id": "2356",
-      "name": "英業達",
-      "entry": 71.46,
-      "stop": 66.23,
-      "target": 80.17,
+      "stop": 38.11,
+      "target": 46.35,
       "trade_type": "當沖"
     },
     {
       "id": "2436",
       "name": "偉詮電",
-      "entry": 69.24,
-      "stop": 64.12,
-      "target": 77.78,
+      "entry": 73.26,
+      "stop": 67.78,
+      "target": 82.38,
       "trade_type": "當沖"
     },
     {
-      "id": "4763",
-      "name": "材料*-KY",
-      "entry": 52.6,
-      "stop": 49.29,
-      "target": 59.22,
-      "trade_type": "短線"
-    },
-    {
-      "id": "2103",
-      "name": "台橡",
-      "entry": 27.35,
-      "stop": 25.49,
-      "target": 31.08,
-      "trade_type": "短線"
+      "id": "9921",
+      "name": "巨大",
+      "entry": 112.06,
+      "stop": 104.47,
+      "target": 124.7,
+      "trade_type": "當沖"
     },
     {
       "id": "3048",
       "name": "益登",
-      "entry": 59.7,
-      "stop": 54.35,
-      "target": 70.4,
+      "entry": 60.7,
+      "stop": 55.11,
+      "target": 71.88,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2426",
+      "name": "鼎元",
+      "entry": 68.6,
+      "stop": 60.54,
+      "target": 84.72,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2478",
+      "name": "大毅",
+      "entry": 130.0,
+      "stop": 113.37,
+      "target": 163.26,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2481",
+      "name": "強茂",
+      "entry": 143.0,
+      "stop": 127.41,
+      "target": 174.18,
       "trade_type": "短線"
     },
     {
       "id": "6834",
       "name": "天二科技",
-      "entry": 107.0,
-      "stop": 95.05,
-      "target": 130.89,
+      "entry": 107.5,
+      "stop": 95.37,
+      "target": 131.76,
       "trade_type": "短線"
     },
     {
-      "id": "8150",
-      "name": "南茂",
-      "entry": 92.2,
-      "stop": 81.39,
-      "target": 113.82,
+      "id": "9914",
+      "name": "美利達",
+      "entry": 85.5,
+      "stop": 79.12,
+      "target": 98.25,
       "trade_type": "短線"
     }
   ]
