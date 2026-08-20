@@ -1,76 +1,76 @@
 {
-  "date": "2026-08-19",
+  "date": "2026-08-20",
   "stocks": [
+    {
+      "id": "2606",
+      "name": "裕民",
+      "entry": 70.25,
+      "stop": 67.25,
+      "target": 75.25,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "2375",
+      "name": "凱美",
+      "entry": 127.0,
+      "stop": 113.02,
+      "target": 154.96,
+      "trade_type": "短線"
+    },
+    {
+      "id": "9914",
+      "name": "美利達",
+      "entry": 88.6,
+      "stop": 81.16,
+      "target": 103.47,
+      "trade_type": "短線"
+    },
+    {
+      "id": "9921",
+      "name": "巨大",
+      "entry": 104.0,
+      "stop": 95.1,
+      "target": 121.81,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2302",
+      "name": "麗正",
+      "entry": 44.7,
+      "stop": 40.31,
+      "target": 53.48,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2371",
+      "name": "大同",
+      "entry": 27.0,
+      "stop": 25.58,
+      "target": 29.85,
+      "trade_type": "短線"
+    },
     {
       "id": "2481",
       "name": "強茂",
-      "entry": 153.26,
-      "stop": 137.14,
-      "target": 180.14,
-      "trade_type": "當沖"
-    },
-    {
-      "id": "2634",
-      "name": "漢翔",
-      "entry": 76.88,
-      "stop": 71.44,
-      "target": 85.95,
-      "trade_type": "當沖"
-    },
-    {
-      "id": "9945",
-      "name": "潤泰新",
-      "entry": 30.35,
-      "stop": 29.21,
-      "target": 32.24,
-      "trade_type": "當沖"
-    },
-    {
-      "id": "2392",
-      "name": "正崴",
-      "entry": 40.3,
-      "stop": 37.39,
-      "target": 46.12,
-      "trade_type": "短線"
-    },
-    {
-      "id": "2426",
-      "name": "鼎元",
-      "entry": 67.1,
-      "stop": 58.86,
-      "target": 83.59,
-      "trade_type": "短線"
-    },
-    {
-      "id": "2436",
-      "name": "偉詮電",
-      "entry": 64.7,
-      "stop": 59.54,
-      "target": 75.03,
+      "entry": 136.5,
+      "stop": 120.0,
+      "target": 169.5,
       "trade_type": "短線"
     },
     {
       "id": "2605",
       "name": "新興",
-      "entry": 35.2,
-      "stop": 33.31,
-      "target": 38.97,
+      "entry": 36.75,
+      "stop": 34.76,
+      "target": 40.73,
       "trade_type": "短線"
     },
     {
-      "id": "2630",
-      "name": "亞航",
-      "entry": 51.7,
-      "stop": 47.85,
-      "target": 59.4,
-      "trade_type": "短線"
-    },
-    {
-      "id": "3005",
-      "name": "神基",
-      "entry": 117.5,
-      "stop": 111.66,
-      "target": 129.18,
+      "id": "4540",
+      "name": "全球傳動",
+      "entry": 59.4,
+      "stop": 53.69,
+      "target": 70.82,
       "trade_type": "短線"
     }
   ]
