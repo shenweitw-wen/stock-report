@@ -1,84 +1,76 @@
 {
-  "date": "2026-09-01",
+  "date": "2026-09-02",
   "stocks": [
-    {
-      "id": "6226",
-      "name": "光鼎",
-      "entry": 36.78,
-      "stop": 33.77,
-      "target": 41.79,
-      "trade_type": "當沖"
-    },
-    {
-      "id": "2392",
-      "name": "正崴",
-      "entry": 45.0,
-      "stop": 41.19,
-      "target": 52.63,
-      "trade_type": "短線"
-    },
-    {
-      "id": "2426",
-      "name": "鼎元",
-      "entry": 97.8,
-      "stop": 86.75,
-      "target": 119.89,
-      "trade_type": "短線"
-    },
-    {
-      "id": "2489",
-      "name": "瑞軒",
-      "entry": 42.2,
-      "stop": 38.36,
-      "target": 49.87,
-      "trade_type": "短線"
-    },
-    {
-      "id": "2609",
-      "name": "陽明",
-      "entry": 59.5,
-      "stop": 55.0,
-      "target": 68.5,
-      "trade_type": "短線"
-    },
-    {
-      "id": "5871",
-      "name": "中租-KY",
-      "entry": 117.0,
-      "stop": 112.39,
-      "target": 126.21,
-      "trade_type": "短線"
-    },
     {
       "id": "1101",
       "name": "台泥",
-      "entry": 24.4,
-      "stop": 23.65,
-      "target": 25.9,
+      "entry": 25.3,
+      "stop": 24.4,
+      "target": 27.1,
       "trade_type": "短線"
     },
     {
-      "id": "3715",
-      "name": "定穎投控",
-      "entry": 120.5,
-      "stop": 112.41,
-      "target": 136.68,
+      "id": "1409",
+      "name": "新纖",
+      "entry": 25.65,
+      "stop": 24.34,
+      "target": 28.26,
+      "trade_type": "短線"
+    },
+    {
+      "id": "3019",
+      "name": "亞光",
+      "entry": 143.5,
+      "stop": 134.93,
+      "target": 160.64,
+      "trade_type": "短線"
+    },
+    {
+      "id": "4906",
+      "name": "正文",
+      "entry": 38.2,
+      "stop": 35.95,
+      "target": 42.7,
       "trade_type": "短線"
     },
     {
       "id": "6209",
       "name": "今國光",
-      "entry": 79.5,
-      "stop": 73.54,
-      "target": 91.41,
+      "entry": 81.9,
+      "stop": 75.63,
+      "target": 94.44,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2426",
+      "name": "鼎元",
+      "entry": 107.5,
+      "stop": 95.92,
+      "target": 130.66,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2489",
+      "name": "瑞軒",
+      "entry": 42.8,
+      "stop": 38.67,
+      "target": 51.05,
+      "trade_type": "短線"
+    },
+    {
+      "id": "3543",
+      "name": "州巧",
+      "entry": 48.3,
+      "stop": 43.61,
+      "target": 57.69,
       "trade_type": "短線"
     },
     {
       "id": "6269",
       "name": "台郡",
-      "entry": 74.9,
-      "stop": 69.19,
-      "target": 86.32,
+      "entry": 75.2,
+      "stop": 69.44,
+      "target": 86.73,
       "trade_type": "短線"
     }
   ]
