@@ -1,84 +1,84 @@
 {
-  "date": "2026-09-04",
+  "date": "2026-09-07",
   "stocks": [
     {
-      "id": "1301",
-      "name": "台塑",
-      "entry": 65.7,
-      "stop": 60.93,
-      "target": 75.24,
+      "id": "2324",
+      "name": "仁寶",
+      "entry": 41.6,
+      "stop": 38.56,
+      "target": 47.69,
       "trade_type": "短線"
     },
     {
-      "id": "2201",
-      "name": "裕隆",
-      "entry": 31.4,
-      "stop": 30.17,
-      "target": 33.85,
+      "id": "2426",
+      "name": "鼎元",
+      "entry": 104.5,
+      "stop": 91.24,
+      "target": 131.03,
       "trade_type": "短線"
     },
     {
-      "id": "2388",
-      "name": "威盛",
-      "entry": 75.0,
-      "stop": 70.17,
-      "target": 84.66,
+      "id": "1326",
+      "name": "台化",
+      "entry": 69.8,
+      "stop": 63.68,
+      "target": 82.04,
       "trade_type": "短線"
     },
     {
-      "id": "2465",
-      "name": "麗臺",
-      "entry": 96.2,
-      "stop": 86.99,
-      "target": 114.63,
+      "id": "1717",
+      "name": "長興",
+      "entry": 76.1,
+      "stop": 70.07,
+      "target": 88.16,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2305",
+      "name": "全友",
+      "entry": 30.85,
+      "stop": 28.21,
+      "target": 36.13,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2399",
+      "name": "映泰",
+      "entry": 47.3,
+      "stop": 44.17,
+      "target": 53.57,
       "trade_type": "短線"
     },
     {
       "id": "2498",
       "name": "宏達電",
       "entry": 41.6,
-      "stop": 39.72,
-      "target": 45.36,
+      "stop": 39.7,
+      "target": 45.4,
       "trade_type": "短線"
     },
     {
       "id": "3019",
       "name": "亞光",
-      "entry": 143.0,
-      "stop": 131.21,
-      "target": 166.57,
-      "trade_type": "短線"
-    },
-    {
-      "id": "3504",
-      "name": "揚明光",
-      "entry": 87.8,
-      "stop": 78.72,
-      "target": 105.95,
-      "trade_type": "短線"
-    },
-    {
-      "id": "4540",
-      "name": "全球傳動",
-      "entry": 59.5,
-      "stop": 54.79,
-      "target": 68.93,
+      "entry": 144.5,
+      "stop": 132.77,
+      "target": 167.96,
       "trade_type": "短線"
     },
     {
       "id": "6168",
       "name": "宏齊",
-      "entry": 27.6,
-      "stop": 25.47,
-      "target": 31.85,
+      "entry": 29.05,
+      "stop": 26.77,
+      "target": 33.6,
       "trade_type": "短線"
     },
     {
-      "id": "6209",
-      "name": "今國光",
-      "entry": 81.1,
-      "stop": 74.21,
-      "target": 94.88,
+      "id": "8103",
+      "name": "瀚荃",
+      "entry": 122.5,
+      "stop": 110.14,
+      "target": 147.23,
       "trade_type": "短線"
     }
   ]
