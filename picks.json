@@ -1,84 +1,76 @@
 {
-  "date": "2026-09-07",
+  "date": "2026-09-08",
   "stocks": [
     {
-      "id": "2324",
-      "name": "仁寶",
-      "entry": 41.6,
-      "stop": 38.56,
-      "target": 47.69,
+      "id": "0052",
+      "name": "富邦科技",
+      "entry": 63.75,
+      "stop": 62.19,
+      "target": 66.87,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2855",
+      "name": "統一證",
+      "entry": 52.0,
+      "stop": 50.21,
+      "target": 55.59,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2363",
+      "name": "矽統",
+      "entry": 52.5,
+      "stop": 50.07,
+      "target": 57.35,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2388",
+      "name": "威盛",
+      "entry": 77.7,
+      "stop": 72.75,
+      "target": 87.6,
       "trade_type": "短線"
     },
     {
       "id": "2426",
       "name": "鼎元",
-      "entry": 104.5,
-      "stop": 91.24,
-      "target": 131.03,
+      "entry": 99.1,
+      "stop": 85.39,
+      "target": 126.53,
       "trade_type": "短線"
     },
     {
-      "id": "1326",
-      "name": "台化",
-      "entry": 69.8,
-      "stop": 63.68,
-      "target": 82.04,
+      "id": "3714",
+      "name": "富采",
+      "entry": 67.2,
+      "stop": 62.28,
+      "target": 77.04,
       "trade_type": "短線"
     },
     {
-      "id": "1717",
-      "name": "長興",
-      "entry": 76.1,
-      "stop": 70.07,
-      "target": 88.16,
-      "trade_type": "短線"
-    },
-    {
-      "id": "2305",
-      "name": "全友",
-      "entry": 30.85,
-      "stop": 28.21,
-      "target": 36.13,
-      "trade_type": "短線"
-    },
-    {
-      "id": "2399",
-      "name": "映泰",
-      "entry": 47.3,
-      "stop": 44.17,
-      "target": 53.57,
-      "trade_type": "短線"
-    },
-    {
-      "id": "2498",
-      "name": "宏達電",
-      "entry": 41.6,
-      "stop": 39.7,
-      "target": 45.4,
-      "trade_type": "短線"
-    },
-    {
-      "id": "3019",
-      "name": "亞光",
-      "entry": 144.5,
-      "stop": 132.77,
-      "target": 167.96,
+      "id": "4927",
+      "name": "泰鼎-KY",
+      "entry": 43.0,
+      "stop": 39.08,
+      "target": 50.84,
       "trade_type": "短線"
     },
     {
       "id": "6168",
       "name": "宏齊",
-      "entry": 29.05,
-      "stop": 26.77,
-      "target": 33.6,
+      "entry": 29.4,
+      "stop": 27.02,
+      "target": 34.16,
       "trade_type": "短線"
     },
     {
-      "id": "8103",
-      "name": "瀚荃",
-      "entry": 122.5,
-      "stop": 110.14,
-      "target": 147.23,
+      "id": "6834",
+      "name": "天二科技",
+      "entry": 97.0,
+      "stop": 87.54,
+      "target": 115.92,
       "trade_type": "短線"
     }
   ]
