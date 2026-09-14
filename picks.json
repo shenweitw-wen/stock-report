@@ -1,84 +1,84 @@
 {
-  "date": "2026-09-11",
+  "date": "2026-09-14",
   "stocks": [
     {
-      "id": "2363",
-      "name": "矽統",
-      "entry": 52.6,
-      "stop": 49.62,
-      "target": 58.56,
-      "trade_type": "短線"
+      "id": "2851",
+      "name": "中再保",
+      "entry": 47.69,
+      "stop": 45.09,
+      "target": 52.03,
+      "trade_type": "當沖"
     },
     {
-      "id": "3094",
-      "name": "聯傑",
-      "entry": 41.9,
-      "stop": 37.91,
-      "target": 49.87,
-      "trade_type": "短線"
+      "id": "2890",
+      "name": "永豐金",
+      "entry": 44.32,
+      "stop": 42.72,
+      "target": 46.98,
+      "trade_type": "當沖"
     },
     {
-      "id": "1409",
-      "name": "新纖",
-      "entry": 25.15,
-      "stop": 23.33,
-      "target": 28.79,
-      "trade_type": "短線"
-    },
-    {
-      "id": "1609",
-      "name": "大亞",
-      "entry": 37.75,
-      "stop": 36.61,
-      "target": 40.03,
+      "id": "0050",
+      "name": "元大台灣50",
+      "entry": 107.7,
+      "stop": 105.12,
+      "target": 112.86,
       "trade_type": "短線"
     },
     {
       "id": "1709",
       "name": "和益",
-      "entry": 35.3,
-      "stop": 31.43,
-      "target": 43.05,
+      "entry": 36.2,
+      "stop": 32.42,
+      "target": 43.75,
       "trade_type": "短線"
     },
     {
-      "id": "2605",
-      "name": "新興",
-      "entry": 36.25,
-      "stop": 33.78,
-      "target": 41.2,
+      "id": "0052",
+      "name": "富邦科技",
+      "entry": 62.55,
+      "stop": 60.96,
+      "target": 65.72,
       "trade_type": "短線"
     },
     {
-      "id": "3715",
-      "name": "定穎投控",
-      "entry": 127.0,
-      "stop": 115.59,
-      "target": 149.82,
+      "id": "2338",
+      "name": "光罩",
+      "entry": 47.75,
+      "stop": 44.58,
+      "target": 54.08,
       "trade_type": "短線"
     },
     {
-      "id": "6005",
-      "name": "群益證",
-      "entry": 31.6,
-      "stop": 30.62,
-      "target": 33.55,
+      "id": "2409",
+      "name": "友達",
+      "entry": 30.2,
+      "stop": 27.81,
+      "target": 34.99,
       "trade_type": "短線"
     },
     {
-      "id": "6141",
-      "name": "柏承",
-      "entry": 55.4,
-      "stop": 49.21,
-      "target": 67.79,
+      "id": "3016",
+      "name": "嘉晶",
+      "entry": 109.5,
+      "stop": 100.51,
+      "target": 127.48,
       "trade_type": "短線"
     },
     {
-      "id": "6168",
-      "name": "宏齊",
-      "entry": 29.8,
-      "stop": 27.27,
-      "target": 34.86,
+      "id": "6209",
+      "name": "今國光",
+      "entry": 80.0,
+      "stop": 72.78,
+      "target": 94.44,
+      "trade_type": "短線"
+    },
+    {
+      "id": "6226",
+      "name": "光鼎",
+      "entry": 30.0,
+      "stop": 25.62,
+      "target": 38.75,
       "trade_type": "短線"
     }
   ]
