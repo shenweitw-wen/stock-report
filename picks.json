@@ -1,4 +1,77 @@
 {
-  "date": "2026-09-18",
-  "stocks": []
+  "date": "2026-09-21",
+  "stocks": [
+    {
+      "id": "2468",
+      "name": "華經",
+      "entry": 45.85,
+      "stop": 42.93,
+      "target": 51.69,
+      "trade_type": "短線"
+    },
+    {
+      "id": "6226",
+      "name": "光鼎",
+      "entry": 45.7,
+      "stop": 40.88,
+      "target": 55.34,
+      "trade_type": "短線"
+    },
+    {
+      "id": "6443",
+      "name": "元晶",
+      "entry": 25.5,
+      "stop": 24.22,
+      "target": 28.06,
+      "trade_type": "短線"
+    },
+    {
+      "id": "6668",
+      "name": "中揚光",
+      "entry": 49.25,
+      "stop": 45.11,
+      "target": 57.52,
+      "trade_type": "短線"
+    },
+    {
+      "id": "8110",
+      "name": "華東",
+      "entry": 47.4,
+      "stop": 44.88,
+      "target": 52.45,
+      "trade_type": "短線"
+    },
+    {
+      "id": "1709",
+      "name": "和益",
+      "entry": 39.2,
+      "stop": 35.43,
+      "target": 46.73,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2369",
+      "name": "菱生",
+      "entry": 31.0,
+      "stop": 29.59,
+      "target": 33.82,
+      "trade_type": "短線"
+    },
+    {
+      "id": "4956",
+      "name": "光鋐",
+      "entry": 42.6,
+      "stop": 39.06,
+      "target": 49.68,
+      "trade_type": "短線"
+    },
+    {
+      "id": "8103",
+      "name": "瀚荃",
+      "entry": 129.5,
+      "stop": 117.82,
+      "target": 152.86,
+      "trade_type": "短線"
+    }
+  ]
 }
