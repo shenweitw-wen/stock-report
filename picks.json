@@ -1,84 +1,76 @@
 {
-  "date": "2026-09-23",
+  "date": "2026-09-24",
   "stocks": [
     {
-      "id": "1528",
-      "name": "恩德",
-      "entry": 26.15,
-      "stop": 23.88,
-      "target": 30.68,
+      "id": "4919",
+      "name": "新唐",
+      "entry": 134.0,
+      "stop": 123.82,
+      "target": 154.36,
       "trade_type": "短線"
     },
     {
       "id": "1709",
       "name": "和益",
-      "entry": 45.95,
-      "stop": 41.73,
-      "target": 54.39,
+      "entry": 48.3,
+      "stop": 43.83,
+      "target": 57.24,
       "trade_type": "短線"
     },
     {
-      "id": "2363",
-      "name": "矽統",
-      "entry": 60.3,
-      "stop": 56.31,
-      "target": 68.27,
+      "id": "2030",
+      "name": "彰源",
+      "entry": 27.65,
+      "stop": 25.76,
+      "target": 31.43,
       "trade_type": "短線"
     },
     {
-      "id": "2406",
-      "name": "國碩",
-      "entry": 30.1,
-      "stop": 28.58,
-      "target": 33.14,
+      "id": "2302",
+      "name": "麗正",
+      "entry": 45.75,
+      "stop": 42.73,
+      "target": 51.78,
       "trade_type": "短線"
     },
     {
-      "id": "3380",
-      "name": "明泰",
-      "entry": 32.95,
-      "stop": 31.17,
-      "target": 36.52,
+      "id": "2340",
+      "name": "台亞",
+      "entry": 34.35,
+      "stop": 32.0,
+      "target": 39.05,
       "trade_type": "短線"
     },
     {
-      "id": "3714",
-      "name": "富采",
-      "entry": 68.9,
-      "stop": 63.53,
-      "target": 79.64,
+      "id": "2498",
+      "name": "宏達電",
+      "entry": 41.65,
+      "stop": 40.12,
+      "target": 44.71,
       "trade_type": "短線"
     },
     {
-      "id": "4919",
-      "name": "新唐",
-      "entry": 133.5,
-      "stop": 123.7,
-      "target": 153.11,
+      "id": "3094",
+      "name": "聯傑",
+      "entry": 54.3,
+      "stop": 48.7,
+      "target": 65.51,
       "trade_type": "短線"
     },
     {
-      "id": "4960",
-      "name": "誠美材",
-      "entry": 23.4,
-      "stop": 21.86,
-      "target": 26.49,
-      "trade_type": "短線"
-    },
-    {
-      "id": "6443",
-      "name": "元晶",
-      "entry": 28.4,
-      "stop": 26.73,
-      "target": 31.74,
+      "id": "3645",
+      "name": "達邁",
+      "entry": 72.6,
+      "stop": 68.51,
+      "target": 80.79,
       "trade_type": "短線"
     },
     {
       "id": "8110",
       "name": "華東",
-      "entry": 48.95,
-      "stop": 45.63,
-      "target": 55.58,
+      "entry": 49.7,
+      "stop": 46.36,
+      "target": 56.39,
       "trade_type": "短線"
     }
   ]
