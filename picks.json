@@ -1,76 +1,84 @@
 {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "stocks": [
-    {
-      "id": "1504",
-      "name": "東元",
-      "entry": 71.7,
-      "stop": 69.62,
-      "target": 75.86,
-      "trade_type": "短線"
-    },
     {
       "id": "4927",
       "name": "泰鼎-KY",
-      "entry": 54.2,
-      "stop": 50.16,
-      "target": 62.29,
+      "entry": 57.9,
+      "stop": 53.57,
+      "target": 66.56,
       "trade_type": "短線"
     },
     {
-      "id": "2332",
-      "name": "友訊",
-      "entry": 20.8,
-      "stop": 19.8,
-      "target": 22.79,
+      "id": "4938",
+      "name": "和碩",
+      "entry": 98.6,
+      "stop": 95.3,
+      "target": 105.2,
       "trade_type": "短線"
     },
     {
-      "id": "2375",
-      "name": "凱美",
-      "entry": 130.5,
-      "stop": 122.84,
-      "target": 145.82,
+      "id": "1802",
+      "name": "台玻",
+      "entry": 63.5,
+      "stop": 59.49,
+      "target": 71.51,
       "trade_type": "短線"
     },
     {
-      "id": "2478",
-      "name": "大毅",
-      "entry": 134.5,
-      "stop": 126.46,
-      "target": 150.57,
+      "id": "2103",
+      "name": "台橡",
+      "entry": 29.15,
+      "stop": 27.61,
+      "target": 32.22,
       "trade_type": "短線"
     },
     {
-      "id": "4989",
-      "name": "榮科",
-      "entry": 73.2,
-      "stop": 68.6,
-      "target": 82.39,
+      "id": "2340",
+      "name": "台亞",
+      "entry": 51.4,
+      "stop": 46.17,
+      "target": 61.87,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2615",
+      "name": "萬海",
+      "entry": 121.0,
+      "stop": 114.62,
+      "target": 133.75,
+      "trade_type": "短線"
+    },
+    {
+      "id": "4720",
+      "name": "德淵",
+      "entry": 24.6,
+      "stop": 22.54,
+      "target": 28.71,
       "trade_type": "短線"
     },
     {
       "id": "6152",
       "name": "百一",
-      "entry": 21.0,
-      "stop": 19.83,
-      "target": 23.34,
+      "entry": 20.2,
+      "stop": 18.86,
+      "target": 22.89,
       "trade_type": "短線"
     },
     {
-      "id": "6834",
-      "name": "天二科技",
-      "entry": 132.0,
-      "stop": 118.34,
-      "target": 159.32,
+      "id": "6209",
+      "name": "今國光",
+      "entry": 89.1,
+      "stop": 83.4,
+      "target": 100.5,
       "trade_type": "短線"
     },
     {
-      "id": "8112",
-      "name": "至上",
-      "entry": 85.1,
-      "stop": 83.39,
-      "target": 88.53,
+      "id": "6282",
+      "name": "康舒",
+      "entry": 45.7,
+      "stop": 43.99,
+      "target": 49.12,
       "trade_type": "短線"
     }
   ]
