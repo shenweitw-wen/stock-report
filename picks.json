@@ -1,4 +1,77 @@
 {
-  "date": "2026-10-14",
-  "stocks": []
+  "date": "2026-10-15",
+  "stocks": [
+    {
+      "id": "2609",
+      "name": "陽明",
+      "entry": 66.83,
+      "stop": 64.32,
+      "target": 71.01,
+      "trade_type": "當沖"
+    },
+    {
+      "id": "1326",
+      "name": "台化",
+      "entry": 85.5,
+      "stop": 79.91,
+      "target": 96.69,
+      "trade_type": "短線"
+    },
+    {
+      "id": "1710",
+      "name": "東聯",
+      "entry": 20.0,
+      "stop": 18.89,
+      "target": 22.23,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2312",
+      "name": "金寶",
+      "entry": 33.25,
+      "stop": 31.92,
+      "target": 35.91,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2355",
+      "name": "敬鵬",
+      "entry": 51.9,
+      "stop": 49.55,
+      "target": 56.59,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2375",
+      "name": "凱美",
+      "entry": 136.5,
+      "stop": 127.77,
+      "target": 153.96,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2478",
+      "name": "大毅",
+      "entry": 137.5,
+      "stop": 127.91,
+      "target": 156.68,
+      "trade_type": "短線"
+    },
+    {
+      "id": "2615",
+      "name": "萬海",
+      "entry": 125.0,
+      "stop": 118.41,
+      "target": 138.18,
+      "trade_type": "短線"
+    },
+    {
+      "id": "6668",
+      "name": "中揚光",
+      "entry": 64.8,
+      "stop": 59.61,
+      "target": 75.17,
+      "trade_type": "短線"
+    }
+  ]
 }
